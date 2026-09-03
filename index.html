@@ -1,0 +1,1803 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Mantasha ❤️</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Noto+Naskh+Arabic:wght@400;500;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+/* =========================================
+   BASIC
+========================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#05030d;
+    color:white;
+    font-family:"Poppins",sans-serif;
+    overflow-x:hidden;
+}
+
+
+/* =========================================
+   FIXED CINEMATIC BACKGROUND
+========================================= */
+
+.cinematic-bg{
+    position:fixed;
+    inset:0;
+    z-index:-10;
+    overflow:hidden;
+
+    background:
+    radial-gradient(circle at 50% 10%, #25154a 0%, #100721 40%, #05030d 80%);
+}
+
+
+/* =========================================
+   STARS - NO EMOJIS
+========================================= */
+
+.stars{
+    position:absolute;
+    inset:0;
+
+    background-image:
+    radial-gradient(circle, rgba(255,255,255,.9) 1px, transparent 1.5px),
+    radial-gradient(circle, rgba(255,255,255,.7) 1px, transparent 1.5px),
+    radial-gradient(circle, rgba(255,255,255,.5) 1px, transparent 1.5px);
+
+    background-size:
+    90px 90px,
+    140px 140px,
+    210px 210px;
+
+    background-position:
+    10px 20px,
+    70px 100px,
+    130px 40px;
+
+    animation:starsMove 40s linear infinite;
+}
+
+
+@keyframes starsMove{
+
+    from{
+        transform:translateY(0);
+    }
+
+    to{
+        transform:translateY(-120px);
+    }
+
+}
+
+
+/* =========================================
+   SOFT AURORA LIGHT
+========================================= */
+
+.aurora{
+    position:absolute;
+
+    width:80vw;
+    height:45vh;
+
+    border-radius:50%;
+
+    filter:blur(100px);
+
+    opacity:.25;
+}
+
+
+.aurora.one{
+    top:5%;
+    left:-25%;
+
+    background:#7d4ba5;
+
+    animation:auroraOne 18s ease-in-out infinite alternate;
+}
+
+
+.aurora.two{
+    bottom:10%;
+    right:-30%;
+
+    background:#8f426d;
+
+    animation:auroraTwo 20s ease-in-out infinite alternate;
+}
+
+
+@keyframes auroraOne{
+
+    from{
+        transform:translateX(0) scale(1);
+    }
+
+    to{
+        transform:translateX(25%) scale(1.3);
+    }
+
+}
+
+
+@keyframes auroraTwo{
+
+    from{
+        transform:translateX(0) scale(1);
+    }
+
+    to{
+        transform:translateX(-25%) scale(1.25);
+    }
+
+}
+
+
+/* =========================================
+   GENERAL SECTION
+========================================= */
+
+section{
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:80px 20px;
+
+    position:relative;
+}
+
+
+/* =========================================
+   HERO - NIGHT & MOON
+========================================= */
+
+.hero{
+    min-height:100vh;
+}
+
+
+.moon{
+    width:230px;
+    height:230px;
+
+    border-radius:50%;
+
+    background:
+    radial-gradient(
+        circle at 35% 30%,
+        #ffffff,
+        #eee9ff 38%,
+        #c4b7d7 72%,
+        #887b9d
+    );
+
+    box-shadow:
+    0 0 45px rgba(255,255,255,.8),
+    0 0 110px rgba(180,145,255,.5),
+    0 0 220px rgba(130,80,200,.25);
+
+    position:relative;
+
+    animation:moonFloat 6s ease-in-out infinite;
+}
+
+
+/* Moon craters */
+
+.moon::before{
+    content:"";
+
+    position:absolute;
+
+    width:38px;
+    height:38px;
+
+    border-radius:50%;
+
+    background:rgba(90,75,120,.15);
+
+    top:60px;
+    left:45px;
+
+    box-shadow:
+    80px 25px 0 rgba(90,75,120,.12),
+    55px 105px 0 rgba(90,75,120,.1);
+}
+
+
+@keyframes moonFloat{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-22px);
+    }
+
+}
+
+
+.hero-date{
+    margin-top:55px;
+
+    letter-spacing:7px;
+    font-size:12px;
+
+    opacity:.6;
+}
+
+
+.hero h1{
+
+    margin-top:25px;
+
+    font-family:"Great Vibes",cursive;
+
+    font-size:clamp(90px,16vw,190px);
+
+    font-weight:400;
+
+    color:#ffc1dd;
+
+    text-shadow:
+    0 0 30px rgba(255,130,190,.55);
+}
+
+
+.hero-message{
+
+    max-width:700px;
+
+    margin-top:25px;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:clamp(22px,3vw,35px);
+
+    line-height:1.6;
+
+    opacity:.85;
+}
+
+
+.scroll{
+
+    position:absolute;
+
+    bottom:35px;
+
+    font-size:12px;
+
+    letter-spacing:4px;
+
+    opacity:.5;
+
+    animation:scrollDown 2s infinite;
+}
+
+
+@keyframes scrollDown{
+
+    50%{
+        transform:translateY(10px);
+    }
+
+}
+
+
+/* =========================================
+   MOON SECTION
+========================================= */
+
+.moon-story h2{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:clamp(50px,9vw,110px);
+
+    font-weight:400;
+
+}
+
+
+.moon-story h2 span{
+    color:#e5d8ff;
+}
+
+
+.moon-story p{
+
+    margin-top:40px;
+
+    max-width:750px;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:clamp(23px,3vw,34px);
+
+    line-height:1.8;
+
+    opacity:.85;
+}
+
+
+/* =========================================
+   STARS SECTION
+========================================= */
+
+.stars-story h2{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:clamp(50px,9vw,105px);
+
+    font-weight:400;
+
+}
+
+
+.stars-story p{
+
+    max-width:750px;
+
+    margin-top:40px;
+
+    font-size:18px;
+
+    line-height:2;
+
+    opacity:.75;
+}
+
+
+/* =========================================
+   QUOTES
+========================================= */
+
+.quotes{
+    background:
+    linear-gradient(
+        180deg,
+        transparent,
+        rgba(120,70,170,.08),
+        transparent
+    );
+}
+
+
+.quote{
+
+    max-width:900px;
+
+    padding:70px 20px;
+
+    border-bottom:
+    1px solid rgba(255,255,255,.08);
+}
+
+
+.language{
+
+    color:#ff9dcc;
+
+    font-size:12px;
+
+    letter-spacing:7px;
+
+    margin-bottom:25px;
+}
+
+
+.quote-text{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:clamp(30px,5vw,55px);
+
+    line-height:1.55;
+}
+
+
+.arabic{
+
+    font-family:"Noto Naskh Arabic",serif;
+}
+
+
+.translation{
+
+    margin-top:25px;
+
+    font-size:14px;
+
+    opacity:.55;
+
+    line-height:1.7;
+}
+
+
+/* =========================================
+   BIRTHDAY
+========================================= */
+
+.birthday{
+
+    background:
+    radial-gradient(
+        circle,
+        rgba(255,100,170,.1),
+        transparent 65%
+    );
+}
+
+
+.birthday h2{
+
+    font-family:"Great Vibes",cursive;
+
+    font-size:clamp(85px,15vw,180px);
+
+    color:#ffb8d8;
+
+    font-weight:400;
+}
+
+
+.birthday p{
+
+    max-width:700px;
+
+    margin-top:40px;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:clamp(24px,3vw,36px);
+
+    line-height:1.8;
+
+    opacity:.9;
+}
+
+
+/* =========================================
+   SUNRISE SECTION
+========================================= */
+
+.sunrise{
+
+    min-height:100vh;
+
+    background:
+
+    linear-gradient(
+        to bottom,
+        rgba(12,8,25,.5) 0%,
+        rgba(82,37,69,.35) 45%,
+        rgba(205,100,85,.25) 75%,
+        rgba(255,170,100,.2) 100%
+    );
+
+    overflow:hidden;
+}
+
+
+/* Horizon */
+
+.horizon{
+
+    position:absolute;
+
+    bottom:0;
+
+    width:100%;
+    height:35%;
+
+    background:
+
+    linear-gradient(
+        to bottom,
+        transparent,
+        rgba(5,3,13,.9)
+    );
+}
+
+
+/* Sun */
+
+.sun{
+
+    width:150px;
+    height:150px;
+
+    border-radius:50%;
+
+    background:
+
+    radial-gradient(
+        circle,
+        #fff9c9,
+        #ffd27d 50%,
+        #ff9a6b
+    );
+
+    box-shadow:
+
+    0 0 60px rgba(255,210,120,.7),
+    0 0 140px rgba(255,140,90,.35);
+
+    margin-bottom:40px;
+
+    animation:sunRise 7s ease-in-out infinite alternate;
+}
+
+
+@keyframes sunRise{
+
+    from{
+        transform:translateY(25px);
+    }
+
+    to{
+        transform:translateY(-20px);
+    }
+
+}
+
+
+.sunrise h2{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:clamp(55px,10vw,120px);
+
+    font-weight:400;
+
+}
+
+
+.sunrise p{
+
+    margin-top:30px;
+
+    max-width:750px;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:clamp(23px,3vw,34px);
+
+    line-height:1.8;
+
+    opacity:.9;
+}
+
+
+/* =========================================
+   DISTANCE - ONLY ONE SECTION
+========================================= */
+
+.distance h2{
+
+    max-width:900px;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:clamp(50px,8vw,100px);
+
+    font-weight:400;
+
+    line-height:1.2;
+}
+
+
+.distance h2 span{
+
+    color:#ff9dcc;
+}
+
+
+.distance p{
+
+    margin-top:45px;
+
+    max-width:700px;
+
+    line-height:2;
+
+    font-size:18px;
+
+    opacity:.75;
+}
+
+
+/* =========================================
+   LETTER SECTION
+========================================= */
+
+.letter-section h2{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:clamp(45px,8vw,85px);
+
+    font-weight:400;
+}
+
+
+.letter-section > p{
+
+    margin-top:15px;
+
+    opacity:.55;
+}
+
+
+/* Hide checkbox */
+
+#openLetter{
+    display:none;
+}
+
+
+/* =========================================
+   ENVELOPE
+========================================= */
+
+.envelope-label{
+
+    margin-top:60px;
+
+    cursor:pointer;
+
+    display:block;
+}
+
+
+.envelope{
+
+    width:340px;
+    height:220px;
+
+    position:relative;
+
+    background:#e8a1bd;
+
+    border-radius:8px;
+
+    box-shadow:
+
+    0 30px 90px rgba(0,0,0,.65),
+    0 0 70px rgba(255,130,190,.2);
+
+    transition:1s ease;
+}
+
+
+.envelope-label:hover .envelope{
+
+    transform:scale(1.05);
+}
+
+
+/* Flap */
+
+.envelope::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:0;
+    height:0;
+
+    border-left:170px solid transparent;
+    border-right:170px solid transparent;
+
+    border-top:120px solid #ffc4da;
+
+    transform-origin:top;
+
+    transition:1.2s;
+
+    z-index:3;
+}
+
+
+/* Bottom */
+
+.envelope::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:0;
+    left:0;
+
+    width:0;
+    height:0;
+
+    border-left:170px solid #dc89aa;
+    border-right:170px solid #dc89aa;
+
+    border-top:120px solid transparent;
+}
+
+
+.open-text{
+
+    position:absolute;
+
+    top:135px;
+
+    width:100%;
+
+    text-align:center;
+
+    z-index:5;
+
+    font-family:"Great Vibes",cursive;
+
+    font-size:45px;
+
+    color:#76294e;
+}
+
+
+/* Envelope open */
+
+#openLetter:checked
+~ .envelope-label
+.envelope::before{
+
+    transform:rotateX(180deg);
+}
+
+
+#openLetter:checked
+~ .envelope-label
+.envelope{
+
+    transform:
+    translateY(-20px)
+    scale(1.03);
+}
+
+
+/* =========================================
+   LETTER
+========================================= */
+
+.letter{
+
+    max-height:0;
+
+    opacity:0;
+
+    overflow:hidden;
+
+    width:min(850px,92vw);
+
+    margin-top:0;
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #fffdf8,
+        #fff2e6
+    );
+
+    color:#533343;
+
+    border-radius:5px;
+
+    box-shadow:
+    0 30px 100px rgba(0,0,0,.6);
+
+    transition:
+
+    max-height 2.5s ease,
+    opacity 1.5s ease,
+    margin-top 1s ease,
+    padding 1s ease;
+}
+
+
+#openLetter:checked
+~ .letter{
+
+    max-height:5000px;
+
+    opacity:1;
+
+    margin-top:80px;
+
+    padding:70px 50px;
+}
+
+
+.letter h2{
+
+    font-family:"Great Vibes",cursive;
+
+    font-size:clamp(55px,8vw,85px);
+
+    color:#bf5b83;
+
+    margin-bottom:40px;
+}
+
+
+.letter p{
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:clamp(21px,3vw,28px);
+
+    line-height:1.85;
+
+    text-align:left;
+
+    margin-bottom:28px;
+}
+
+
+.signature{
+
+    font-family:"Great Vibes",cursive !important;
+
+    font-size:50px !important;
+
+    text-align:right !important;
+
+    color:#bf5b83;
+}
+
+
+/* =========================================
+   FINAL
+========================================= */
+
+.final h2{
+
+    font-family:"Great Vibes",cursive;
+
+    font-size:clamp(90px,16vw,190px);
+
+    font-weight:400;
+
+    color:#ffb8d8;
+
+    text-shadow:
+    0 0 40px rgba(255,130,190,.4);
+}
+
+
+.final p{
+
+    margin-top:35px;
+
+    font-family:"Cormorant Garamond",serif;
+
+    font-size:clamp(25px,4vw,42px);
+
+    line-height:1.7;
+
+    opacity:.85;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:600px){
+
+    .moon{
+        width:165px;
+        height:165px;
+    }
+
+
+    .sun{
+        width:120px;
+        height:120px;
+    }
+
+
+    .envelope{
+        width:280px;
+        height:185px;
+    }
+
+
+    .envelope::before{
+
+        border-left-width:140px;
+        border-right-width:140px;
+
+        border-top-width:100px;
+    }
+
+
+    .envelope::after{
+
+        border-left-width:140px;
+        border-right-width:140px;
+
+        border-top-width:100px;
+    }
+
+
+    .open-text{
+        top:110px;
+        font-size:40px;
+    }
+
+
+    #openLetter:checked
+    ~ .letter{
+
+        padding:45px 25px;
+    }
+
+
+    .letter p{
+        font-size:22px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- =========================================
+     CINEMATIC BACKGROUND
+========================================= -->
+
+<div class="cinematic-bg">
+
+```
+<div class="stars"></div>
+
+<div class="aurora one"></div>
+
+<div class="aurora two"></div>
+```
+
+</div>
+
+<!-- =========================================
+     NIGHT / MOON
+========================================= -->
+
+<section class="hero">
+
+```
+<div class="moon"></div>
+
+
+<div class="hero-date">
+
+    SEPTEMBER 5
+
+</div>
+
+
+<h1>
+
+    Mantasha ❤️
+
+</h1>
+
+
+<div class="hero-message">
+
+    Tonight, the moon is beautiful...
+
+    <br>
+
+    but somehow,
+
+    it reminds me of someone.
+
+</div>
+
+
+<div class="scroll">
+
+    ↓ SCROLL ↓
+
+</div>
+```
+
+</section>
+
+<!-- =========================================
+     MOON STORY
+========================================= -->
+
+<section class="moon-story">
+
+```
+<h2>
+
+    Some people are like
+
+    <span>the moon.</span>
+
+</h2>
+
+
+<p>
+
+    You may not always be able to hold them.
+
+    <br><br>
+
+    You may not always be close to them.
+
+    <br><br>
+
+    But simply knowing they exist
+    somewhere under the same sky
+    makes the night feel a little less lonely.
+
+</p>
+```
+
+</section>
+
+<!-- =========================================
+     STARS STORY
+========================================= -->
+
+<section class="stars-story">
+
+```
+<h2>
+
+    And then there are
+
+    the stars.
+
+</h2>
+
+
+<p>
+
+    They are far away,
+
+    yet they still manage
+    to leave light behind.
+
+    <br><br>
+
+    Maybe some people are like that too.
+
+    <br><br>
+
+    Even from far away,
+    their existence can quietly
+    make someone's world brighter.
+
+</p>
+```
+
+</section>
+
+<!-- =========================================
+     MULTILINGUAL QUOTES
+========================================= -->
+
+<section class="quotes">
+
+```
+<!-- URDU : LOVE -->
+
+<div class="quote">
+
+    <div class="language">
+
+        URDU
+
+    </div>
+
+
+    <div class="quote-text arabic">
+
+        تم آئے ہو نہ شبِ انتظار گزری ہے،
+        <br>
+        تلاش میں ہے سحر، بار بار گزری ہے۔
+
+    </div>
+
+
+    <div class="translation">
+
+        You have come, and the long night of waiting has passed;
+        dawn has searched for you again and again.
+
+    </div>
+
+</div>
+
+
+
+<!-- ENGLISH : MOON -->
+
+<div class="quote">
+
+    <div class="language">
+
+        ENGLISH
+
+    </div>
+
+
+    <div class="quote-text">
+
+        The moon never asks
+        to be loved.
+
+        <br><br>
+
+        It simply shines...
+
+        and somehow,
+        the whole night becomes beautiful.
+
+    </div>
+
+</div>
+
+
+
+<!-- FARSI : STARS -->
+
+<div class="quote">
+
+    <div class="language">
+
+        فارسی
+
+    </div>
+
+
+    <div class="quote-text arabic">
+
+        هر ستاره‌ای در آسمان،
+        یادآور نوری است
+        که حتی از دور هم دیده می‌شود.
+
+    </div>
+
+
+    <div class="translation">
+
+        Every star in the sky
+        reminds us that some light
+        can still be seen from far away.
+
+    </div>
+
+</div>
+
+
+
+<!-- ARABIC : SUNRISE -->
+
+<div class="quote">
+
+    <div class="language">
+
+        العربية
+
+    </div>
+
+
+    <div class="quote-text arabic">
+
+        مع كل شروق شمس،
+        تبدأ فرصة جديدة
+        ليكون اليوم أجمل.
+
+    </div>
+
+
+    <div class="translation">
+
+        With every sunrise,
+        a new opportunity begins
+        for the day to become more beautiful.
+
+    </div>
+
+</div>
+
+
+
+<!-- SPANISH : EXISTENCE -->
+
+<div class="quote">
+
+    <div class="language">
+
+        ESPAÑOL
+
+    </div>
+
+
+    <div class="quote-text">
+
+        Algunas personas no saben
+        lo especiales que son.
+
+        <br><br>
+
+        Simplemente existen...
+
+        y hacen el mundo
+        un poco más hermoso.
+
+    </div>
+
+
+    <div class="translation">
+
+        Some people don't know
+        how special they are.
+
+        They simply exist...
+        and make the world
+        a little more beautiful.
+
+    </div>
+
+</div>
+```
+
+</section>
+
+<!-- =========================================
+     BIRTHDAY
+========================================= -->
+
+<section class="birthday">
+
+```
+<h2>
+
+    Happy Birthday
+
+</h2>
+
+
+<p>
+
+    Today is the day
+
+    a beautiful soul
+    entered this world.
+
+    <br><br>
+
+    And maybe you don't realize it,
+
+    but your existence
+    has made someone's world
+    a little more beautiful.
+
+    <br><br>
+
+    Happy Birthday,
+
+    <br>
+
+    <strong>Mantasha ❤️</strong>
+
+</p>
+```
+
+</section>
+
+<!-- =========================================
+     SUNRISE
+========================================= -->
+
+<section class="sunrise">
+
+```
+<div class="sun"></div>
+
+
+<h2>
+
+    And then...
+
+    <br>
+
+    the sun rises.
+
+</h2>
+
+
+<p>
+
+    No matter how long the night feels,
+
+    morning eventually arrives.
+
+    <br><br>
+
+    And with every sunrise,
+
+    the world quietly says:
+
+    <br><br>
+
+    Begin again.
+
+    Hope again.
+
+    Smile again.
+
+</p>
+
+
+<div class="horizon"></div>
+```
+
+</section>
+
+<!-- =========================================
+     DISTANCE & LOYALTY
+========================================= -->
+
+<section class="distance">
+
+```
+<h2>
+
+    We may be
+
+    <span>far away.</span>
+
+    <br><br>
+
+    But distance will never define
+
+    my loyalty.
+
+</h2>
+
+
+<p>
+
+    Distance can measure the space
+    between two places.
+
+    <br><br>
+
+    But it cannot measure sincerity.
+
+    <br><br>
+
+    It cannot measure how often
+    someone is remembered.
+
+    <br><br>
+
+    And it cannot decide
+    what a heart chooses to feel.
+
+</p>
+```
+
+</section>
+
+<!-- =========================================
+     TRANSITION
+========================================= -->
+
+<section>
+
+```
+<div style="
+    font-family:'Cormorant Garamond',serif;
+    font-size:clamp(45px,8vw,95px);
+    line-height:1.3;
+    max-width:850px;
+">
+
+    But there is still
+
+    <br>
+
+    something
+
+    <br>
+
+    I wanted to tell you...
+
+</div>
+
+
+<p style="
+    margin-top:30px;
+    opacity:.55;
+">
+
+    Something written honestly from my heart.
+
+</p>
+```
+
+</section>
+
+<!-- =========================================
+     LETTER
+========================================= -->
+
+<section class="letter-section">
+
+```
+<h2>
+
+    A letter for you 💌
+
+</h2>
+
+
+<p>
+
+    Touch the envelope.
+
+</p>
+
+
+<!-- CSS ONLY TRIGGER -->
+
+<input
+    type="checkbox"
+    id="openLetter"
+>
+
+
+<!-- ENVELOPE -->
+
+<label
+    for="openLetter"
+    class="envelope-label"
+>
+
+    <div class="envelope">
+
+        <div class="open-text">
+
+            Open ❤️
+
+        </div>
+
+    </div>
+
+</label>
+
+
+
+<!-- LETTER -->
+
+<div class="letter">
+
+
+    <h2>
+
+        My Dearest Mantasha,
+
+    </h2>
+
+
+    <p>
+
+        Today is your day.
+
+        <br><br>
+
+        And I wanted to give you something
+        more than just a simple
+        Happy Birthday.
+
+    </p>
+
+
+    <p>
+
+        I wanted to leave you
+        a few words that come
+        honestly from my heart.
+
+    </p>
+
+
+    <p>
+
+        I know we are far from each other.
+
+        There are different places,
+        different moments,
+        and a distance between us
+        that life has created.
+
+    </p>
+
+
+    <p>
+
+        But distance has never been able
+        to define my loyalty.
+
+        And it has never changed
+        the sincerity with which
+        I care about you.
+
+    </p>
+
+
+    <p>
+
+        Because some things
+        are not measured by distance.
+
+        Some things are measured
+        by patience.
+
+        By honesty.
+
+        By respect.
+
+        And by continuing to wish
+        happiness for someone
+        even when they are far away.
+
+    </p>
+
+
+    <p>
+
+        Mantasha...
+
+        <br><br>
+
+        On your birthday,
+
+        my biggest prayer for you
+        is simple.
+
+    </p>
+
+
+    <p>
+
+        May Allah bless you
+        with lots of happiness.
+
+        <br><br>
+
+        May He protect your smile.
+
+        <br><br>
+
+        May He bring peace
+        to your heart.
+
+        <br><br>
+
+        May your life be filled
+        with beautiful moments.
+
+    </p>
+
+
+    <p>
+
+        I don't know what
+        the future has written for us.
+
+        No one truly knows.
+
+    </p>
+
+
+    <p>
+
+        But InshaAllah...
+
+        if our paths are meant to meet,
+
+        if time becomes kind to us,
+
+        and if Allah has written
+        something beautiful for us...
+
+    </p>
+
+
+    <p>
+
+        Then maybe one day,
+
+        this distance will become
+
+        nothing more than
+
+        a story we remember.
+
+    </p>
+
+
+    <p>
+
+        Until then,
+
+        I don't want to give you
+        empty promises.
+
+    </p>
+
+
+    <p>
+
+        I only want you to know this:
+
+        distance will never define
+        my loyalty.
+
+        And wherever life takes us,
+
+        I will always genuinely pray
+        for your happiness.
+
+    </p>
+
+
+    <p>
+
+        So today...
+
+        smile a little more.
+
+        Laugh a little louder.
+
+        Enjoy your day.
+
+        Make beautiful memories.
+
+    </p>
+
+
+    <p>
+
+        And remember...
+
+        somewhere under this same sky,
+
+        beneath the same moon,
+
+        someone is genuinely grateful
+
+        that you exist.
+
+    </p>
+
+
+    <p>
+
+        Happy Birthday, Mantasha. ❤️
+
+    </p>
+
+
+    <p>
+
+        Thank you...
+
+        for being part of a world
+
+        that feels a little more beautiful
+
+        because you are in it.
+
+    </p>
+
+
+    <p class="signature">
+
+        With all my heart ❤️
+
+    </p>
+
+
+</div>
+```
+
+</section>
+
+<!-- =========================================
+     FINAL
+========================================= -->
+
+<section class="final">
+
+```
+<h2>
+
+    Thank You ❤️
+
+</h2>
+
+
+<p>
+
+    For existing.
+
+    <br><br>
+
+    For being you.
+
+    <br><br>
+
+    And for making this world
+
+    a little more beautiful.
+
+    <br><br>
+
+    Happy Birthday,
+
+    <br>
+
+    <strong>Mantasha</strong>
+
+</p>
+```
+
+</section>
+
+</body>
+</html>
